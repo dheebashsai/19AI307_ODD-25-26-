@@ -1,26 +1,24 @@
-# Ex.No:1(C) LOOPING STATEMENT
+# Ex.No:1(D) ARRAYS
 
 ## QUESTION:
-Write a Java program to print the Fibonacci series using a for loop. The series starts with 0 and 1, and the next number is the sum of the previous two.
+Write a Java program to sort an array in ascending order.
+| Input | Result |
+|-------|--------|
+| 5<br>5<br>3<br>8<br>6<br>2 | 2 3 5 6 8 |
 
-Input: 1
-
-Result: Fibonacci Series: 0 1
 
 ## AIM:
-To write a Java program using a for loop to print the Fibonacci series starting from 0 and 1.
+To write a Java program that reads an array of integers and sorts the elements in ascending order using built-in array methods.
 
 ## ALGORITHM :
 1.	Start the program.
 2.	Import the necessary package 'java.util'
-3.	Create a Scanner object to read the number of terms.
-4.Initialize two variables a = 0 and b = 1 to represent the first two Fibonacci numbers.
-5. If the input is 1, print “0 1”.
-6.Otherwise, use a for loop to generate the Fibonacci series:
-    Print the current value of a.
-    Compute the next term as next = a + b.
-    Update values: a = b and b = next.
-7.End the loop and terminate the program.
+3.	Read the size of the array from the user.
+4.	Declare an integer array with the given size.
+5.	Read each array element using a loop.
+6.	Use Arrays.sort() to sort the array in ascending order.
+7.	Print the sorted array elements.
+8.	End the program.
 
 
 
@@ -29,7 +27,7 @@ To write a Java program using a for loop to print the Fibonacci series starting 
 ## PROGRAM:
  ```
 /*
-Program to implement a Looping Statement using Java
+Program to implement a Array concept using Java
 Developed by: BUVANESHWARI R
 RegisterNumber:  212224100007
 */
@@ -38,24 +36,21 @@ RegisterNumber:  212224100007
 ## SOURCE CODE:
 ```
 import java.util.*;
-
-class prog {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-
-        int a = 0, b = 1;
-
-        System.out.print("Fibonacci Series: ");
-
-        if (n >= 1)
-            System.out.print(a + " "+b + " ");
-
-        for (int i = 3; i <= n; i++) {
-            int c = a + b;
-            System.out.print(c + " ");
-            a = b;
-            b = c;
+class prog{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        for (int i=0;i<n;i++)
+        {
+            int x=sc.nextInt();
+            a[i]=x;
+        }
+        Arrays.sort(a);
+        for (int i=0;i<n;i++)
+        {
+            System.out.print(a[i]+ " ");
         }
     }
 }
@@ -68,9 +63,9 @@ class prog {
 
 ## OUTPUT:
 
-<img width="425" height="187" alt="image" src="https://github.com/user-attachments/assets/93815e61-3f40-4314-8430-88f2fb227f21" />
+<img width="500" height="694" alt="image" src="https://github.com/user-attachments/assets/ff86bb32-fc40-4c22-9e7f-5a6f77bb0477" />
 
 
 
 ## RESULT:
-Thus, the Java program to print the Fibonacci series using a for loop was executed successfully.
+Thus, the Java program to sort an array in ascending order was executed successfully.

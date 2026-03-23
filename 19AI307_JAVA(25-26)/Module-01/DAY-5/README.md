@@ -33,8 +33,8 @@ To write a Java program that reads a string from the user and prints the reverse
  ```
 /*
 Program to implement a Strings and Math Function using Java
-Developed by: BUVANESHWARI R  
-RegisterNumber:212224100007
+Developed by: DHEEBASH SAI R  
+RegisterNumber:212224040075
 */
 ```
 

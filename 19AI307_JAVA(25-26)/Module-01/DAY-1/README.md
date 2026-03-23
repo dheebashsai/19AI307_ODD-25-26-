@@ -30,8 +30,8 @@ To write a Java program that gets the user's name as input (String) and prints a
  ```
 /*
 Program to implement variables and Operators using Java
-Developed by: BUVANESHWARI R
-RegisterNumber:  212224100007
+Developed by: DHEEBASH SAI R
+RegisterNumber:  212224040075
 */
 ```
 

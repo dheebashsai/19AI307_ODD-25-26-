@@ -32,8 +32,8 @@ To write a java program to get the user input for temperature and display approp
  ```
 /*
 Program to implement a conditional statement using Java
-Developed by: BUVANESHWARI R
-RegisterNumber:  212224100007
+Developed by: DHEEBASH SAI R
+RegisterNumber:  212224040075
 */
 ```
 

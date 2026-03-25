@@ -1,71 +1,88 @@
-# Ex.No:1(D) ARRAYS
+# Ex.No:2(A) CLASS AND OBJECT
 
 ## QUESTION:
-Write a Java program to sort an array in ascending order.
-| Input | Result |
-|-------|--------|
-| 5<br>5<br>3<br>8<br>6<br>2 | 2 3 5 6 8 |
-
-
+Define a class Car with brand (String), color (String), and year (int). Create 2 different objects of Car  Assign values to attributes. Print the details of both cars.import java.util.Scanner;
 ## AIM:
-To write a Java program that reads an array of integers and sorts the elements in ascending order using built-in array methods.
+To define a class Car with attributes brand, color, and year; create two objects of the class; assign values to their attributes; and print the details of both cars.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	Read the size of the array from the user.
-4.	Declare an integer array with the given size.
-5.	Read each array element using a loop.
-6.	Use Arrays.sort() to sort the array in ascending order.
-7.	Print the sorted array elements.
-8.	End the program.
+1. Define a class Car with three data members:
 
+     String brand
+     String color
+     int year
+ and a method printDetails() to display these values.
 
+2. In the main() method, create a Scanner object to read user inputs.
 
+3. Create the first object car1 and read its brand, color, and year from the user.
+
+4. Create the second object car2 and read its brand, color, and year.
+
+5. Call printDetails() for car1 to display its information.
+
+6. Call printDetails() for car2 to display its information.
+
+7.Close the scanner and end the program.
 
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Array concept using Java
+Program to implement a Class and Objects using Java
 Developed by: DHEEBASH SAI R
-RegisterNumber:  212224040075
+RegisterNumber: 212224040075
 */
 ```
 
 ## SOURCE CODE:
 ```
-import java.util.*;
-class prog{
-    public static void main(String[] args)
-    {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int a[]=new int[n];
-        for (int i=0;i<n;i++)
-        {
-            int x=sc.nextInt();
-            a[i]=x;
-        }
-        Arrays.sort(a);
-        for (int i=0;i<n;i++)
-        {
-            System.out.print(a[i]+ " ");
-        }
+import java.util.Scanner;
+
+class Car {
+    String brand;
+    String color;
+    int year;
+
+    void printDetails() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Color: " + color);
+        System.out.println("Year: " + year);
+    }
+}
+
+class prog {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        Car car1 = new Car();
+        car1.brand = scanner.nextLine();
+        car1.color = scanner.nextLine();
+        car1.year = scanner.nextInt();
+        scanner.nextLine();
+
+        
+        Car car2 = new Car();
+        car2.brand = scanner.nextLine();
+        car2.color = scanner.nextLine();
+        car2.year = scanner.nextInt();
+
+        car1.printDetails();
+        car2.printDetails();
+
+        scanner.close();
     }
 }
 ```
 
 
-
-
-
-
 ## OUTPUT:
-
-<img width="500" height="694" alt="image" src="https://github.com/user-attachments/assets/ff86bb32-fc40-4c22-9e7f-5a6f77bb0477" />
-
+<img width="597" height="685" alt="image" src="https://github.com/user-attachments/assets/05ebe553-f279-4f17-b125-675b4afd47bd" />
 
 
 ## RESULT:
-Thus, the Java program to sort an array in ascending order was executed successfully.
+Therefore,the program successfully creates two Car objects and assigns values to their attributes.
+
+
+
